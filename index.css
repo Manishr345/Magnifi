@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(collageimg.jpeg); */
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 1),rgb(0 0 0 / 7%),rgba(0, 0, 0, 1)),url("collageimg.jpeg");
+    background-size: cover;
+}
+.mainbox{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    
+}
+.box pre{
+    color: white;
+    font-size: 3vw;
+}
+.text pre{
+  margin-left: 5vw;
+  background-image: url('img4.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-clip: text; 
+  color: transparent;
+}
+.bottom{
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.button a{
+    margin-top: 10vh;
+    margin-left: 11vw;
+    text-align: center;
+    line-height: 32px;
+    border: none;
+    box-shadow: none;
+    color: rgb(5, 5, 5);
+    width: 20vh;
+    height: 5.5vh;
+    text-decoration: none;
+    background-color: rgb(82, 163, 209);
+    border-radius: 4px;
+}
+.magazine{
+    width: 38%;
+    height: 100%;
+}
+.carousel-inner{
+    border-radius: 9px;
+    box-shadow: 10px 10px 15px gray;
+}
+.magazine img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
