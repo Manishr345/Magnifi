@@ -5,6 +5,23 @@
     font-family: "Hind Madurai", sans-serif;
 }
 
+/* Checkpoint filling missing css */
+.tech-display{
+    display: block; /* Our default page that's why block*/
+}
+.sports-display{
+    display: none; 
+}
+.entertainment-display{
+    display: none;
+}
+.finance-display{
+    display: none;
+}
+.politics-display{
+    display: none;
+}
+
 .navbar{
     display: flex;
     height: 80px;
