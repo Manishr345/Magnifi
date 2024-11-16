@@ -6,8 +6,11 @@
 }
 
 /* Checkpoint filling missing css */
-.tech-display{
+.mixed-display{
     display: block; /* Our default page that's why block*/
+}
+.tech-display{
+    display: none;  
 }
 .sports-display{
     display: none; 
