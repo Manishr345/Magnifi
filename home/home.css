@@ -104,6 +104,7 @@
 }
 
 .title{
+    margin-top: 3rem;
     width: 75%;
     justify-content: center;
     align-items: center;
@@ -123,9 +124,11 @@
 }
 
 .description{
+    overflow: hidden;
     visibility: hidden;
     transition: visibility 0s ease-in 0s;
-    display: block;
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 25px;
     width: 65%;
@@ -160,21 +163,18 @@
 .magodd:hover .description{
     visibility: visible;
     display: block; /* description hover */
-    margin-left: 20rem;
-    position: relative;
-    transform: translateY(5%);
     transition: visibility 0s ease-in 1s;
 }
 
 .magodd:hover .title{
+    margin-top: 0rem;
     font-size: 3rem; /* title hover */
-    position: relative;
-    transform: translateY(-20%);
-    margin-left: 27.5rem;
+    display: flex;
+    justify-items: center;
 }
 
 .magodd:hover{
-    height: 40rem; /* background hover */
+    height: 25rem; /* background hover */
 }
 
 .magodd:hover .magimg{
