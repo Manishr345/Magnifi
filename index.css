@@ -57,7 +57,6 @@
 }
 
 .button a {
-    
     text-align: center;
     line-height: 32px;
     border: none;
@@ -127,7 +126,9 @@
     }
     .button a {
         margin: 0px;
-        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .button {
         width: 100%;
