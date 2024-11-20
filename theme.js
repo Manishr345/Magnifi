@@ -1,11 +1,17 @@
-const main = document.querySelector('.main');
-const text = document.querySelector('.text');
+const main = document.querySelector('.dark-main');
+const text = document.querySelector('.dark-text');
 const theme = document.querySelector('.theme');
-const button = document.querySelector('.button');
+const button = document.querySelector('.dark-button');
 const moon = document.querySelector('.moon');
 const sun = document.querySelector('.sun');
 
 theme.addEventListener('click', () => {
+    if(theme.classList.contains('darkthemebg')){
+        theme.classList.replace('darkthemebg', 'themebg');
+    }
+    else{
+        theme.classList.replace('themebg', 'darkthemebg');
+    }
     moon.classList.toggle('hidden');
     sun.classList.toggle('hidden');
     if(button.classList.contains('button')){
