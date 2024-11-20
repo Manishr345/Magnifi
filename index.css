@@ -2,10 +2,30 @@
     margin: 0px;
     padding: 0px;
 }
+.theme{
+    width: 4rem;
+    height: 2rem;
+    position: absolute;
+    top: 2.2rem;
+    right: 4rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+.hidden{
+    display: none;
+}
+.dark-main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 1), rgba(0 0 0 / 7%), rgb(0, 0, 0, 1)), url("collageimg.jpeg");
+    background-size: cover;
+}
 .main {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0 0 0 / 7%), rgba(0, 0, 0, 1)), url("collageimg.jpeg");
+    background-image: linear-gradient(to bottom, rgb(155, 153, 153), rgba(250, 250, 250, 0.11), rgb(147, 144, 144)), url("collageimg.jpeg");
     background-size: cover;
 }
 .mainbox {
@@ -16,6 +36,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .box {
     width: 80%;
     height: 70%;
@@ -26,7 +47,18 @@
     color: white;
     font-size: 3vw;
 }
+.dark-text pre {
+    margin-bottom: 0px;
+    font-size: 10vw;
+    margin-left: 5vw;
+    background-image: url('img4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+}
 .text pre {
+    text-shadow: 5px 5px 0px black;
     margin-bottom: 0px;
     font-size: 10vw;
     margin-left: 5vw;
@@ -48,18 +80,40 @@
     align-items: center;
     width: 55%;
 }
+
+.dark-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
 .button a {
     text-align: center;
     line-height: 32px;
     border: none;
     box-shadow: none;
-    color: rgb(5, 5, 5);
-    width: 20vh;
-    height: 5.5vh;
+    color: white;
+    width: 25vh;
+    height: 6vh;
     text-decoration: none;
-    background-color: rgb(82, 163, 209);
+    background-color: rgb(8, 8, 8);
     border-radius: 4px;
 }
+
+.dark-button a {
+    text-align: center;
+    line-height: 32px;
+    border: none;
+    box-shadow: none;
+    color: black;
+    width: 25vh;
+    height: 6vh;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 4px;
+}
+
 .magazine {
     width: 38%;
     height: 100%;
@@ -95,12 +149,21 @@
 }
 
 .button a:hover {
-    background-color: #0056b3;
+    background-color: rgb(34, 33, 33);
     transform: scale(1.05);
     color: white;
 }
 
+.dark-button a:hover {
+    background-color: rgb(167, 164, 164);
+    transform: scale(1.05);
+    color: black;
+}
+
 @media (max-width: 400px) {
+    .theme{
+        right: 1rem;
+    }
     .bottom {
         border-radius: 5px;
         display: flex;
@@ -114,7 +177,18 @@
         align-items: center;
         justify-content: center;
     }
+    .dark-button a {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .button {
+        width: 100%;
+        margin-top: 1vw;
+        justify-content: center;
+    }
+    .dark-button {
         width: 100%;
         margin-top: 1vw;
         justify-content: center;

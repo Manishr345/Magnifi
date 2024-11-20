@@ -5,6 +5,10 @@
     font-family: "Hind Madurai", sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
 /* Checkpoint filling missing css */
 .mixed-display{
     display: block; /* Our default page that's why block*/
