@@ -1,8 +1,8 @@
 const burger = document.querySelector('.burger');
 const categories = document.querySelector('.categories');
-const navbar = document.querySelector('.navbar');
+const nav = document.querySelector('.navbardark');
 
 burger.addEventListener('click', () => {
     categories.classList.toggle('hidden');
-    navbar.classList.toggle('height');
+    nav.classList.toggle('height');
 })

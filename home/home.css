@@ -5,8 +5,19 @@
     font-family: "Hind Madurai", sans-serif;
 }
 
-body{
-    background-color: black;
+.theme{
+    margin-bottom: 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.bg{
+    background-color: rgb(221, 219, 219);
+}
+.bgdark{
+    background-color: rgb(32, 31, 31);
 }
 
 /* Checkpoint filling missing css */
@@ -33,7 +44,17 @@ body{
     display: flex;
     height: 5rem;
     width: 100%;
-    background-color: rgb(27, 3, 27);
+    background-color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.navbardark{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    background-color: black;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -63,7 +84,22 @@ body{
     gap: 6px;
 }
 
+.catitemdark{
+    border-radius: 3rem;
+    padding: 10px;
+    display: flex;
+    gap: 6px;
+}
+
 .link a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    transition: font-weight ease-in-out 0.4s;
+}
+
+.linkdark a{
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -83,7 +119,7 @@ body{
 }
 
 .height{
-    height: 80px;
+    height: 5rem;
 }
 
 .magodd{
@@ -91,7 +127,18 @@ body{
     height: 9rem;
     width: 100%;
     margin-top: 3rem;
-    background-color: rgb(46, 5, 46);
+    background-color: white;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.magodddark{
+    display: flex;
+    height: 9rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: black;
     transition-property: height;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
@@ -102,7 +149,18 @@ body{
     height: 9rem;
     width: 100%;
     margin-top: 3rem;
-    background-color: rgb(46, 5, 46);
+    background-color: white;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.magevendark{
+    display: flex;
+    height: 9rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: black;
     transition-property: height;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
@@ -123,6 +181,18 @@ body{
     width: 75%;
     justify-content: center;
     align-items: center;
+    color: black;
+    font-size: 25px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.titledark{
+    margin-top: 3rem;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 25px;
     transition-property: font-size;
@@ -131,6 +201,18 @@ body{
 }
 
 .title-alternate{
+    margin-top: 3rem;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.title-alternatedark{
     margin-top: 3rem;
     width: 75%;
     justify-content: center;
@@ -156,35 +238,72 @@ body{
     transition: visibility 0s ease-in 0s;
     display: flex;
     justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+    width: 65%;
+
+}
+
+.descriptiondark{
+    overflow: hidden;
+    visibility: hidden;
+    transition: visibility 0s ease-in 0s;
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 1.5rem;
     width: 65%;
 
 }
 
-.icon{
+.icondark{
     display: block;
 }
 
-.icon-black{
+.icon{
     display: none;
 }
 
+.icon-blackdark{
+    display: none;
+}
+
+.icon-black{
+    display: block;
+}
+
 .catitem:hover{
+    background-color: black;
+}
+
+.catitemdark:hover{
     background-color: white;
 }
 
 .catitem:hover .link a{
     font-weight: bold;
+    color: white;
+}
+
+.catitemdark:hover .linkdark a{
+    font-weight: bold;
     color: black;
 }
 
-.catitem:hover .icon{
+.catitemdark:hover .icondark{
     display: none;
 }
 
-.catitem:hover .icon-black{
+.catitem:hover .icon{
     display: block;
+}
+
+.catitemdark:hover .icon-blackdark{
+    display: block;
+}
+
+.catitem:hover .icon-black{
+    display: none;
 }
 
 .magodd:hover .description{
@@ -193,7 +312,20 @@ body{
     transition: visibility 0s ease-in 1s;
 }
 
+.magodddark:hover .descriptiondark{
+    visibility: visible;
+    display: block; /* description hover */
+    transition: visibility 0s ease-in 1s;
+}
+
 .magodd:hover .title{
+    margin-top: 0rem;
+    font-size: 3rem; /* title hover */
+    display: flex;
+    justify-items: center;
+}
+
+.magodddark:hover .titledark{
     margin-top: 0rem;
     font-size: 3rem; /* title hover */
     display: flex;
@@ -208,11 +340,28 @@ body{
     transform: translateX(1%);
 }
 
+.magodddark:hover .title-alternatedark{
+    margin-top: 0rem;
+    font-size: 3rem; /* title hover */
+    display: flex;
+    justify-items: center;
+    transform: translateX(1%);
+}
+
 .magodd:hover{
     height: 25rem; /* background hover */
 }
 
+.magodddark:hover{
+    height: 25rem; /* background hover */
+}
+
 .magodd:hover .magimg{
+    width: 50%;  
+    height: 100%;  
+}
+
+.magodddark:hover .magimg{
     width: 50%;  
     height: 100%;  
 }
@@ -223,7 +372,20 @@ body{
     transition: visibility 0s ease-in 1s;
 }
 
+.magevendark:hover .descriptiondark{
+    visibility: visible;
+    display: block; /* description hover */
+    transition: visibility 0s ease-in 1s;
+}
+
 .mageven:hover .title{
+    margin-top: 0rem;
+    font-size: 3rem; /* title hover */
+    display: flex;
+    justify-items: center;
+}
+
+.magevendark:hover .titledark{
     margin-top: 0rem;
     font-size: 3rem; /* title hover */
     display: flex;
@@ -238,11 +400,28 @@ body{
     transform: translateX(1%);
 }
 
+.magevendark:hover .title-alternatedark{
+    margin-top: 0rem;
+    font-size: 3rem; /* title hover */
+    display: flex;
+    justify-items: center;
+    transform: translateX(1%);
+}
+
 .mageven:hover{
     height: 25rem; /* background hover */
 }
 
+.magevendark:hover{
+    height: 25rem; /* background hover */
+}
+
 .mageven:hover .magimg{
+    width: 50%;  
+    height: 100%;  
+}
+
+.magevendark:hover .magimg{
     width: 50%;  
     height: 100%;  
 }
