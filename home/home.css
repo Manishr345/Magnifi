@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .sun{
@@ -24,6 +25,7 @@
     justify-content: center;
     gap: 0.5rem;
     color: white;
+    cursor: pointer;
 }
 
 .theme{
@@ -75,7 +77,7 @@
     display: flex;
     height: 5rem;
     width: 100%;
-    background-color: blue;
+    background-color: black;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -189,7 +191,7 @@
 
 .magimg{
     height: 9rem;
-    width: 250px;
+    width: 18rem;
 }
 
 .magimg img{
@@ -447,27 +449,48 @@
     height: 100%;  
 }
 
-@media (width <= 425px){
+@media (max-width: 425px){
     .magodd{
+        margin-top: 6rem;
+    }
+    .magodddark{
         margin-top: 6rem;
     }
     .mageven{
         margin-top: 6rem;
     }
+    .magevendark{
+        margin-top: 6rem;
+    }
     .magodd:hover{
         transition-delay: 0.3s;
         height: 32rem;
-        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .magodddark:hover{
+        transition-delay: 0.3s;
+        height: 32rem;
         justify-content: center;
     }
     .magodd:hover .magimg{
+        height: 9rem;
+    }
+    .magodddark:hover .magimg{
         height: 9rem;
     }
     .magodd:hover .title{
         width: 100%;
         font-size: 2.2rem;
     }
+    .magodddark:hover .titledark{
+        width: 100%;
+        font-size: 2.2rem;
+    }
     .magodd:hover .title-alternate{
+        width: 100%;
+        font-size: 2.2rem;
+    }
+    .magodddark:hover .title-alternatedark{
         width: 100%;
         font-size: 2.2rem;
     }
@@ -478,13 +501,30 @@
         justify-content: center;
         direction: rtl;
     }
+    .magevendark:hover{
+        transition-delay: 0.3s;
+        height: 35rem;
+        flex-direction: row-reverse;
+        justify-content: center;
+        direction: rtl;
+    }
     .mageven:hover .magimg{
+        height: 9rem;
+    }
+    .magevendark:hover .magimg{
         height: 9rem;
     }
     .mageven:hover .td{
         width: 100%;
     }
+    .magevendark:hover .td{
+        width: 100%;
+    }
     .mageven:hover .title{
+        width: 100%;
+        font-size: 2.2rem;
+    }
+    .magevendark:hover .title{
         width: 100%;
         font-size: 2.2rem;
     }
@@ -492,13 +532,26 @@
         width: 100%;
         font-size: 2.2rem;
     }
+    .magevendark:hover .title-alternatedark{
+        width: 100%;
+        font-size: 2.2rem;
+    }
     .description{
+        font-size: 1rem;
+    }
+    .descriptiondark{
         font-size: 1rem;
     }
     .title{
         font-size: 1.5rem;
     }
+    .titledark{
+        font-size: 1.5rem;
+    }
     .title-alternate{
+        font-size: 1.5rem;
+    }
+    .title-alternatedark{
         font-size: 1.5rem;
     }
 }
