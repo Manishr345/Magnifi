@@ -3,6 +3,8 @@ const sun = document.querySelector('.sun');
 const theme = document.querySelector('.theme');
 const navbar = document.querySelector('.navbardark');
 const bg = document.querySelector('.bgdark');
+const burgerdark = document.querySelector('.burgerdark');
+const burger = document.querySelector('.burger');
 
 document.querySelectorAll('.titledark').forEach(el =>{
     theme.addEventListener('click', () => {
@@ -117,6 +119,14 @@ theme.addEventListener('click', () => {
     else{
         navbar.classList.replace('navbar', 'navbardark');
     }
+
     moon.classList.toggle('hide');
     sun.classList.toggle('hide');
+
+    if(bg.classList.contains('bg')){
+        burger.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><path fill="#080808" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>';
+    }
+    else{
+        burger.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><path fill="#fafafa" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>';
+    }
 })

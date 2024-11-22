@@ -5,6 +5,27 @@
     font-family: "Hind Madurai", sans-serif;
 }
 
+.moontext{
+    margin-left: 0rem;
+}
+
+.moon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sun{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+}
+
 .theme{
     margin-bottom: 0.5rem;
 }
@@ -54,7 +75,7 @@
     display: flex;
     height: 5rem;
     width: 100%;
-    background-color: black;
+    background-color: blue;
     position: sticky;
     z-index: 100;
     top: 0;
