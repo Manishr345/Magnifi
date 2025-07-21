@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnifi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Magazines</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="sports.html">Sports</a>
+            <a href="education.html">Education</a>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-article">
+            <img id="featured-img" data-topic="news" alt="Featured News">
+            <div>
+                <h2>Featured Story</h2>
+                <p>Catch up on the latest news and stories from around the world.</p>
+            </div>
+        </section>
+        <section class="articles">
+            <article>
+                <img id="article-img-sports" data-topic="sports" alt="Sports">
+                <h3>Sports Highlights</h3>
+                <p>All the action from the world of sports.</p>
+            </article>
+            <article>
+                <img id="article-img-education" data-topic="education" alt="Education">
+                <h3>Education</h3>
+                <p>Insights and updates from the education sector.</p>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Magnifi Magazine. All rights reserved.</p>
+    </footer>
+    <script src="../js/date.js"></script>
+    <script src="../js/featured-image.js"></script>
+</body>
+</html>
