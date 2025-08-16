@@ -2,8 +2,11 @@
 .env
 .env.*
 *.env
+
 # Ignore any JS files that might store secrets (example)
-js/credentials.js
-js/api-keys.js
-# Node modules (if ever used)
-node_modules/ 
+js/home.js
+js/news.js
+js/sports.js
+
+# Ignore entire js folder
+js/
