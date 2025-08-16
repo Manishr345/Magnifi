@@ -4,45 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnifi</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
+<body class="flex flex-col gap-7">
     <header>
-        <h1>Magazines</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">News</a>
-            <a href="sports.html">Sports</a>
-            <a href="education.html">Education</a>
+        <nav class="flex flex-row gap-7 bg-gray-300 p-3 w-full font-bold">
+            <a class="hover:text-blue-500" href="index.html">Home</a>
+            <a class="hover:text-blue-500" href="news.html">News</a>
+            <a class="hover:text-blue-500" href="sports.html">Sports</a>
         </nav>
     </header>
-    <main>
-        <section class="featured-article">
-            <img id="featured-img" data-topic="news" alt="Featured News">
-            <div>
-                <h2>Featured Story</h2>
-                <p>Catch up on the latest news and stories from around the world.</p>
-            </div>
-        </section>
-        <section class="articles">
-            <article>
-                <img id="article-img-sports" data-topic="sports" alt="Sports">
-                <h3>Sports Highlights</h3>
-                <p>All the action from the world of sports.</p>
-            </article>
-            <article>
-                <img id="article-img-education" data-topic="education" alt="Education">
-                <h3>Education</h3>
-                <p>Insights and updates from the education sector.</p>
-            </article>
-            <!-- Add more articles as needed -->
-        </section>
+    <main class="flex flex-col gap-7">
+        <div id="s1"></div>
+        <div id="s2"></div>
+
     </main>
-    <footer>
-        <p>&copy; <span id="year"></span> Magnifi Magazine. All rights reserved.</p>
+    <footer class="bg-gray-300 w-full font-semibold">
+        <p class="p-3">&copy; Magazine <span id="year"></span></p>
     </footer>
     <script src="../js/date.js"></script>
-    <script src="../js/featured-image.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 </html>
