@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnifi</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
+<body class="flex flex-col gap-7">
     <header>
         <nav class="flex flex-row gap-7 bg-gray-300 p-3 w-full font-bold">
             <a class="hover:text-blue-500" href="index.html">Home</a>
@@ -14,13 +16,15 @@
             <a class="hover:text-blue-500" href="sports.html">Sports</a>
         </nav>
     </header>
-    <main>
+    <main class="flex flex-col gap-7">
+        <div id="s1"></div>
+        <div id="s2"></div>
 
     </main>
     <footer class="bg-gray-300 w-full font-semibold">
         <p class="p-3">&copy; Magazine <span id="year"></span></p>
     </footer>
     <script src="../js/date.js"></script>
-    <script src="../js/sports.js"></script>
+    <script src="../js/home.js"></script>
 </body>
-</html> 
+</html>
