@@ -1,0 +1,12 @@
+# Ignore environment and credential files
+.env
+.env.*
+*.env
+
+# Ignore any JS files that might store secrets (example)
+js/home.js
+js/news.js
+js/sports.js
+
+# Ignore entire js folder
+js/
